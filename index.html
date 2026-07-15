@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Strength Checker</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <h1>🔒 Password Strength Checker</h1>
+
+            <p class="subtitle">
+                Check the strength of your password in real time.
+            </p>
+
+        <div class="password-box">
+            <input type="password" id="password" placeholder="Enter your password" onkeyup="checkPassword()">
+            <button type="button" onclick="togglePassword()">👁️</button>
+
+        </div>
+
+        <div class="buttons">
+            <button onclick="clearPassword()">🗑️ Clear</button>
+        </div>
+
+        <div id="strength-bar">
+            <div id="strength-fill"></div>
+        </div>
+        <p id="result"></p>
+
+        <footer>
+            Developed by Yehansa Rajakaruna
+        </footer>
+
+        </div>
+        <script src="script.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+    </body>
+</html>
